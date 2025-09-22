@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ObfuscatedContact } from "@/components/obfuscated-contact"
+import { ObfuscatedReference } from "@/components/obfuscated-reference"
 import { Github, Linkedin, Facebook, Mail, Phone, ExternalLink, MapPin, Calendar } from "lucide-react"
 import Particles from "@tsparticles/react"
 import { useEffect, useMemo, useState } from "react"
@@ -275,7 +276,7 @@ export default function Portfolio() {
                   </p>
                 </div>
                 <div className="mb-6 text-xs text-muted-foreground">
-                  <p>Reference: Richard Blundell - CEO<br/>Email: rXXX@XXXXXXXXXXXX.com</p>
+                  <p>Reference: Richard Blundell - CEO<br/>Email: <ObfuscatedReference obfuscatedText="rXXX@XXXXXXXXXXXX.com" realText="ribl@faunaphotonics.com" /></p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Laravel</Badge>
@@ -319,7 +320,7 @@ export default function Portfolio() {
                     </p>
                   </div>
                   <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Anne Dvinge<br/>Email: aXXX@XXX.XX.XX</p>
+                    <p>Reference: Anne Dvinge<br/>Email: <ObfuscatedReference obfuscatedText="aXXX@XXX.XX.XX" realText="andv@adm.ku.dk" /></p>
                   </div>
                 </Card>
 
@@ -357,7 +358,7 @@ export default function Portfolio() {
                     </p>
                   </div>
                   <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Ulrik Hjarnaa - CTO<br/>Email: uXXXX@XXXXXXX.XX</p>
+                    <p>Reference: Ulrik Hjarnaa - CTO<br/>Email: <ObfuscatedReference obfuscatedText="uXXXX@XXXXXXX.XX" realText="ulrik@hjarnaa.eu" /></p>
                   </div>
                 </Card>
 
@@ -395,7 +396,7 @@ export default function Portfolio() {
                     </p>
                   </div>
                   <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Jacob Soldath<br/>Email: jXX@XX.XX</p>
+                    <p>Reference: Jacob Soldath<br/>Email: <ObfuscatedReference obfuscatedText="jXX@XX.XX" realText="jso@dr.dk" /></p>
                   </div>
                 </Card>
 
@@ -433,7 +434,7 @@ export default function Portfolio() {
                     </p>
                   </div>
                   <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Bo Hedmann Jensen<br/>Email: bXXXXXXXXXXXX@XX</p>
+                    <p>Reference: Bo Hedmann Jensen<br/>Email: <ObfuscatedReference obfuscatedText="bXXXXXXXXXXXX@XX" realText="bohedmannjensen@gmail.com" /></p>
                   </div>
                 </Card>
               </div>
