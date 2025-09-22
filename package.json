@@ -1,7 +1,8 @@
 {
-  "name": "my-v0-project",
+  "name": "pimpmypixel.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pimpmypixel.github.io",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
