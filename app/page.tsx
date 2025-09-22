@@ -6,6 +6,8 @@ import { Card } from "@/components/ui/card"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ObfuscatedContact } from "@/components/obfuscated-contact"
 import { ObfuscatedReference } from "@/components/obfuscated-reference"
+import { ExperienceCard } from "@/components/ExperienceCard"
+import experiencesData from "@/data/experiences.json"
 import { Github, Linkedin, Facebook, Mail, Phone, ExternalLink, MapPin, Calendar } from "lucide-react"
 import Particles from "@tsparticles/react"
 import { useEffect, useMemo, useState } from "react"
@@ -77,7 +79,7 @@ export default function Portfolio() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-xl font-bold tracking-tight">Pimp My Pixel</div>
+            <div className="text-2xl font-bold tracking-tight font-[family-name:var(--font-jetbrains-mono)] text-primary hover:text-primary/80 transition-colors duration-300">Pimp My Pixel</div>
             <div className="flex items-center space-x-6">
               <div className="hidden md:flex items-center space-x-6">
                 <a href="#about" className="text-sm text-muted-foreground hover:text-foreground transition-all duration-300 hover:scale-105">
@@ -113,16 +115,16 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <h1 className="text-6xl lg:text-8xl font-black mb-8 text-balance leading-none tracking-tighter">
+            <h1 className="text-6xl lg:text-6xl font-black mb-8 text-balance leading-none tracking-tighter">
               Andreas<br />
               <span className="text-primary">Hesse</span>
             </h1>
 
-            <h2 className="text-2xl lg:text-3xl text-muted-foreground mb-8 font-light">
+            <h2 className="text-2xl lg:text-3xl text-muted-foreground mb-8 font-semibold">
               Full Stack Engineer
             </h2>
 
-            <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-2xl font-light">
+            <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-2xl font-medium">
               I build accessible, production-ready digital experiences for the web with 15+ years of expertise.
             </p>
 
@@ -140,58 +142,64 @@ export default function Portfolio() {
                   LinkedIn
                 </a>
               </Button>
+              <Button variant="outline" size="lg" className="hover:scale-105 transition-transform duration-200" asChild>
+                <a href="https://facebook.com/andreashesse" target="_blank" rel="noopener noreferrer">
+                  <Facebook className="h-5 w-5 mr-2" />
+                  Facebook
+                </a>
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 px-6">
+      <section id="about" className="py-18 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
-              <h2 className="text-4xl font-bold mb-6 sticky top-32">About</h2>
+              <h2 className="text-4xl font-black mb-6 sticky top-32">About</h2>
             </div>
             <div className="lg:col-span-8 space-y-8">
               <div className="prose prose-lg max-w-none">
-                <p className="text-xl leading-relaxed text-foreground font-light">
+                <p className="text-xl leading-relaxed text-foreground font-semibold drop-shadow-sm">
                   I'm a full-stack developer with 15+ years of experience turning complex ideas into production-ready digital
                   products. My background in media and interaction design shapes how I approach software: part engineer, part
                   creative problem-solver. I thrive at the intersection of backend architecture and intuitive frontend design,
                   always keeping usability, maintainability, and performance front and center.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground">
+                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
                   I enjoy fast-moving environments where knowledge-sharing, automation, and continuous learning are part of
                   the culture. Whether it's designing robust APIs, optimizing infrastructure, or crafting interfaces that just
                   make sense, I bring a solution-driven mindset and a knack for connecting the dots between strategy and hands-on execution.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground">
+                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
                   At the end of the day, my focus is simple: deliver meaningful, scalable solutions that empower both users and teams.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground">
+                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
                   I aspire to contributing insight and concrete solutions while fostering environments where goals are met.
                   Based just outside Copenhagen, I balance the tech world with family life and diverse interests. While initially
                   appearing serious, colleagues know me as open-minded, deeply social, and genuinely invested in collective success.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground">
-                  Currently, I'm working on a <span className="text-foreground font-medium">private entrepreneurial project</span> focused on{" "}
-                  <span className="text-foreground font-medium">family disputes and parent mental health</span>, building technology-driven solutions
+                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
+                  Currently, I'm working on a <span className="text-foreground font-bold">private entrepreneurial project</span> focused on{" "}
+                  <span className="text-foreground font-bold">family disputes and parent mental health</span>, building technology-driven solutions
                   to support families through difficult times.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground">
+                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
                   In the past, I've had the opportunity to develop software across a variety of settings — from{" "}
-                  <span className="text-foreground font-medium">broadcasting agencies</span> and{" "}
-                  <span className="text-foreground font-medium">large corporations</span> to{" "}
-                  <span className="text-foreground font-medium">start-ups</span> and{" "}
-                  <span className="text-foreground font-medium">digital product studios</span>.
+                  <span className="text-foreground font-semibold">broadcasting agencies</span> and{" "}
+                  <span className="text-foreground font-semibold">large corporations</span> to{" "}
+                  <span className="text-foreground font-semibold">start-ups</span> and{" "}
+                  <span className="text-foreground font-semibold">digital product studios</span>.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground">
+                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
                   When I'm not coding, I'm usually exploring new technologies, contributing to open source, or spending time with
                   family just outside Copenhagen. I identify strongly with solving global challenges through technology.
                 </p>
@@ -206,238 +214,12 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
-              <h2 className="text-4xl font-bold mb-6 sticky top-32">Experience</h2>
+              <h2 className="text-4xl font-black mb-6 sticky top-32">Experience</h2>
             </div>
             <div className="lg:col-span-8 space-y-8">
-              {/* Current Role */}
-              <Card className="p-8 border-l-4 border-l-primary hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                    <Calendar className="h-4 w-4" />
-                    <span>2023 — Present</span>
-                  </div>
-                  <Badge variant="outline" className="bg-primary/10 border-primary/20">Current</Badge>
-                </div>
-                <h3 className="text-2xl font-bold mb-3">
-                  Private Entrepreneurial Project
-                </h3>
-                <p className="text-muted-foreground mb-1 font-medium">Revolutionizing Family Well-being & Mental Health</p>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Building the future of family support through cutting-edge technology. Creating transformative digital solutions
-                  that empower families during their most challenging moments and revolutionize how we approach parental mental health.
-                  Where innovation meets compassion—designing tools that truly matter.
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Laravel</Badge>
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">CDK</Badge>
-                  <Badge variant="secondary">Sevalla</Badge>
-                </div>
-              </Card>
-
-              {/* FaunaPhotonics */}
-              <Card className="p-8 hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                    <Calendar className="h-4 w-4" />
-                    <span>2023 — 2025</span>
-                  </div>
-                  <ExternalLink className="h-4 w-4 text-muted-foreground" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">
-                  Lead Full Stack Engineer
-                </h3>
-                <p className="text-muted-foreground mb-1 font-medium">FaunaPhotonics • IoT, AI & Data Visualization</p>
-                <div className="mb-6">
-                  <ul className="space-y-2 text-muted-foreground leading-relaxed">
-                    <li className="flex items-start">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                      Led end-to-end development across AI, data visualization, product lifecycle, and DevOps, delivering tested, scalable platform with strong focus on lifecycle ownership and performance
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                      Managed integration of AI and data visualization to create actionable insights, optimizing system performance and user experience
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                      Architected and implemented infrastructure solutions using AWS CDK, ensuring scalable and maintainable cloud deployments
-                    </li>
-                    <li className="flex items-start">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                      Collaborated closely with cross-functional teams to deliver innovative IoT solutions that transformed data into meaningful business insights
-                    </li>
-                  </ul>
-                </div>
-                <div className="mb-6 p-4 bg-muted/30 rounded-lg">
-                  <h4 className="text-sm font-semibold text-primary mb-2">Why I loved working here:</h4>
-                  <p className="text-sm text-muted-foreground italic">
-                    The opportunity to work at the intersection of cutting-edge IoT technology and AI was incredibly exciting. Being part of a team that was genuinely pushing boundaries in photonics and data visualization gave me a sense of contributing to something truly innovative and impactful.
-                  </p>
-                </div>
-                <div className="mb-6 text-xs text-muted-foreground">
-                  <p>Reference: Richard Blundell - CEO<br/>Email: <ObfuscatedReference obfuscatedText="rXXX@XXXXXXXXXXXX.com" realText="ribl@faunaphotonics.com" /></p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Laravel</Badge>
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">CDK</Badge>
-                  <Badge variant="secondary">EC2</Badge>
-                  <Badge variant="secondary">Gitlab</Badge>
-                </div>
-              </Card>
-
-              {/* Previous Roles */}
-              <div className="space-y-6">
-                <Card className="p-6 hover:shadow-md transition-shadow duration-300">
-                  <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
-                    <Calendar className="h-4 w-4" />
-                    <span>2022 — 2023</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Project Based Contracts</h3>
-                  <p className="text-muted-foreground mb-4 font-medium">Low Fi Concerts</p>
-                  <div className="mb-4">
-                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Delivered end-to-end solutions for small companies, including full-stack development, infrastructure setup, and data architecture
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Optimized systems and workflows to improve performance, scalability, and maintainability
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Provided technical consulting and implementation for diverse client needs across different industries
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
-                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
-                    <p className="text-sm text-muted-foreground italic">
-                      The variety of projects and direct client interaction was incredibly rewarding. Each project brought new challenges and the satisfaction of seeing small businesses thrive through better technology solutions.
-                    </p>
-                  </div>
-                  <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Anne Dvinge<br/>Email: <ObfuscatedReference obfuscatedText="aXXX@XXX.XX.XX" realText="andv@adm.ku.dk" /></p>
-                  </div>
-                </Card>
-
-                <Card className="p-6 hover:shadow-md transition-shadow duration-300">
-                  <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
-                    <Calendar className="h-4 w-4" />
-                    <span>2018 — 2022</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Senior Full Stack Engineer</h3>
-                  <p className="text-muted-foreground mb-4 font-medium">UserNeeds A/S</p>
-                  <div className="mb-4">
-                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Delivered platform architecture, infrastructure, and observability to support scalable and reliable systems
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Led development of multiple full-stack applications using NodeJS, React, PHP Laravel, Python, and automation/testing tools
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Implemented comprehensive monitoring and logging solutions to ensure system reliability and performance
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Mentored junior developers and contributed to team knowledge sharing and best practices
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
-                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
-                    <p className="text-sm text-muted-foreground italic">
-                      The opportunity to work on complex, enterprise-level systems while mentoring and growing with a talented team was incredibly fulfilling. The focus on quality and long-term maintainability aligned perfectly with my engineering values.
-                    </p>
-                  </div>
-                  <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Ulrik Hjarnaa - CTO<br/>Email: <ObfuscatedReference obfuscatedText="uXXXX@XXXXXXX.XX" realText="ulrik@hjarnaa.eu" /></p>
-                  </div>
-                </Card>
-
-                <Card className="p-6 hover:shadow-md transition-shadow duration-300">
-                  <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
-                    <Calendar className="h-4 w-4" />
-                    <span>2017 — 2018</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Full Stack Engineer</h3>
-                  <p className="text-muted-foreground mb-4 font-medium">Danish Broadcasting (DR)</p>
-                  <div className="mb-4">
-                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Maintained the core Drupal CMS using Symfony, React, and Storybook for component development
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Deployed CI/CD pipelines with Jenkins to AWS infrastructure, improving deployment reliability and speed
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Ensured content management system stability for Denmark's national broadcaster serving millions of users
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Collaborated with content teams to deliver seamless digital experiences for diverse media content
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
-                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
-                    <p className="text-sm text-muted-foreground italic">
-                      Working for Denmark's national broadcaster was a unique experience - the scale and impact of the platform was immense. Contributing to a system that millions of Danes rely on daily gave me a deep sense of purpose and responsibility.
-                    </p>
-                  </div>
-                  <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Jacob Soldath<br/>Email: <ObfuscatedReference obfuscatedText="jXX@XX.XX" realText="jso@dr.dk" /></p>
-                  </div>
-                </Card>
-
-                <Card className="p-6 hover:shadow-md transition-shadow duration-300">
-                  <div className="flex items-center space-x-2 text-sm text-muted-foreground mb-3">
-                    <Calendar className="h-4 w-4" />
-                    <span>2012 — 2016</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-2">Full Stack Engineer</h3>
-                  <p className="text-muted-foreground mb-4 font-medium">Bolius</p>
-                  <div className="mb-4">
-                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Developed using TYPO3, PHP, JavaScript, and Python for comprehensive web application development
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Implemented DevOps practices to streamline deployment and system management processes
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Designed and delivered maps and data visualizations for big data insights, making complex information accessible
-                      </li>
-                      <li className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        Built scalable solutions that supported Bolius's mission of providing housing and energy advice to Danish homeowners
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
-                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
-                    <p className="text-sm text-muted-foreground italic">
-                      Bolius was my first professional role and taught me the fundamentals of web development. The focus on data visualization and making complex information accessible to everyday people was particularly rewarding and shaped my approach to user-centered development.
-                    </p>
-                  </div>
-                  <div className="mb-4 text-xs text-muted-foreground">
-                    <p>Reference: Bo Hedmann Jensen<br/>Email: <ObfuscatedReference obfuscatedText="bXXXXXXXXXXXX@XX" realText="bohedmannjensen@gmail.com" /></p>
-                  </div>
-                </Card>
-              </div>
+              {experiencesData.map((experience) => (
+                <ExperienceCard key={experience.id} experience={experience} />
+              ))}
             </div>
           </div>
         </div>
@@ -448,28 +230,28 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
-              <h2 className="text-4xl font-bold mb-6 sticky top-32">Skills</h2>
+              <h2 className="text-4xl font-black mb-6 sticky top-32">Skills</h2>
             </div>
             <div className="lg:col-span-8">
               <div className="grid md:grid-cols-2 gap-8">
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">Cloud & DevOps</h3>
+                  <h3 className="text-2xl font-black mb-6 text-primary">Cloud & DevOps</h3>
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">AWS</span>
+                      <span className="text-[10px] text-muted-foreground text-center">AWS</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Docker</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Docker</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Kubernetes</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Kubernetes</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">GitLab</span>
+                      <span className="text-[10px] text-muted-foreground text-center">GitLab</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
 
@@ -489,11 +271,11 @@ export default function Portfolio() {
                           <path d="M68,39.3055249 C68,46.2347078 63.2662495,48.7760413 60.4452559,49.6748056 L59.8457203,47.7683056 C62.6597657,46.8725405 66.0147828,44.6771162 66.0147828,39.3055249 C66.0147828,32.5143058 60.4561746,30.8187505 58.0669656,30.404859 C57.5339348,30.3128831 57.1736179,29.8080155 57.2530266,29.2701566 L57.2530266,29.2701566 C57.0167857,26.175968 55.5775032,23.9505516 53.3907865,23.3067204 C51.5743127,22.7728604 49.6228442,23.4806748 48.4257582,25.1142464 C48.2083769,25.4111686 47.8411117,25.562129 47.4807948,25.5091429 C47.1175,25.455157 46.8137618,25.2022234 46.691671,24.8533149 C45.8668132,22.503931 44.6717124,20.5274493 43.1401173,18.9788554 C41.2601166,17.0793535 36.1025223,12.9944248 28.8128047,16.1016099 C24.6031515,17.8971391 21.3057057,23.0697826 21.3057057,27.8765221 C21.3057057,28.4113818 21.3374692,28.9502405 21.4009962,29.4791018 C21.4595601,29.9769712 21.1429179,30.4418493 20.6605101,30.5658168 C18.1670773,31.2066488 13.9852172,33.1821307 13.9852172,39.2215469 C13.9852172,39.4174955 13.9901803,39.6094452 14.0001064,39.7983956 C14.1867168,43.686376 17.0275626,47.0265001 20.9106475,47.923265 L20.4659588,49.871754 C15.7212897,48.7750416 12.2461669,44.674117 12.0168743,39.8983694 C12.004963,39.6804266 12,39.4524864 12,39.2215469 C12,32.3143583 16.6374674,29.7670263 19.352252,28.8692617 C19.3314072,28.5383485 19.3204885,28.2064355 19.3204885,27.8765221 C19.3204885,22.2340018 23.0685786,16.3805368 28.0395625,14.2600929 C33.8641899,11.7747446 40.0362302,13.0114203 44.5456511,17.5672256 C45.9482071,18.9848538 47.0976479,20.7044029 47.9741213,22.6948809 C49.6426964,21.2822513 51.8492653,20.7703856 53.9476399,21.3882236 C56.8262049,22.2350015 58.7528582,24.906301 59.1826577,28.5943338 C61.9986883,29.25716 68,31.5805507 68,39.3055249 L68,39.3055249 Z M56.8986653,61.3137534 L49.9633089,65.1997343 L49.9633089,56.5540016 L56.8986653,52.6120354 L56.8986653,61.3137534 Z M39.0078877,61.28876 L32.0874205,65.2767142 L32.0874205,56.5200105 L39.0078877,52.5900411 L39.0078877,61.28876 Z M31.091834,54.7904641 L24.1693816,50.9054829 L31.1037453,47.0205017 L37.9716043,50.8824889 L31.091834,54.7904641 Z M23.1211869,52.6060369 L30.1022032,56.5240095 L30.1022032,65.2817128 L23.1211869,61.2867605 L23.1211869,52.6060369 Z M40.029282,32.0534267 L46.9110375,35.8984184 L40.0004963,39.7634048 L33.1445486,35.9184131 L40.029282,32.0534267 Z M42.0323661,50.8844884 L48.9548186,47.0045059 L55.8653597,50.9034834 L48.9707003,54.8224557 L42.0323661,50.8844884 Z M40.9931049,52.5890414 L47.9780917,56.5540016 L47.9780917,65.1997343 L40.9931049,61.2807621 L40.9931049,52.5890414 Z M47.9641952,45.2719602 L40.9931049,49.1779359 L40.9931049,41.4949507 L47.9641952,37.5969729 L47.9641952,45.2719602 Z M32.0973465,37.6189672 L39.0078877,41.493951 L39.0078877,49.1749367 L32.0973465,45.2889558 L32.0973465,37.6189672 Z M58.3915486,50.0367107 C58.3865856,50.0337115 58.38063,50.0327118 58.3756669,50.0297126 L58.3766595,50.0277131 L49.9494124,45.2739597 L49.9494124,35.8984184 C49.9494124,35.5435114 49.7637946,35.2165972 49.4600564,35.0366444 C49.4521155,35.0326454 49.4451672,35.0306459 49.4372264,35.026647 L49.4392116,35.0236478 L40.5106971,30.0359558 C40.2089441,29.8689995 39.8436641,29.8689995 39.5458816,30.0369555 L30.6223301,35.045642 L30.6233228,35.0476415 C30.6163745,35.0516404 30.6084336,35.0526402 30.6014854,35.0566391 C30.2987397,35.2365919 30.1121293,35.5645059 30.1121293,35.9184131 L30.1121293,45.2869563 L21.6461705,50.0307123 L21.6481557,50.0327118 C21.6402148,50.0367107 21.632274,50.0387102 21.6253257,50.0427092 C21.3225801,50.2216622 21.1359697,50.550576 21.1359697,50.9044832 L21.1359697,61.8686079 C21.1359697,62.2285135 21.3275431,62.5604265 21.6382296,62.7373801 L30.5965223,67.8650354 L30.6044632,67.8700341 L30.6044632,67.8690343 C30.7573249,67.9560115 30.9260684,68 31.0948118,68 C31.2645479,68 31.4352766,67.9560115 31.5881383,67.8680346 L40.0074446,63.0163069 L48.4882925,67.7740593 L48.4892851,67.77106 C48.639169,67.855038 48.8039421,67.9000262 48.9707003,67.9000262 C49.136466,67.9000262 49.3032242,67.8580372 49.4531081,67.7740593 L58.3746743,62.7753701 C58.6893312,62.5984165 58.8838825,62.2645041 58.8838825,61.9015993 L58.8838825,50.9004842 C58.8838825,50.5445775 58.6972721,50.2166635 58.3915486,50.0367107 L58.3915486,50.0367107 Z" id="AWS-Cloud-Development-Kit_Icon_64_Squid" fill="#FFFFFF"></path>
                         </g>
                       </svg>
-                      <span className="text-xs text-muted-foreground">CDK</span>
+                      <span className="text-[10px] text-muted-foreground text-center">CDK</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">GitHub Actions</span>
+                      <span className="text-[10px] text-muted-foreground text-center">GitHub Actions</span>
                     </div>
                   </div>
                   <ul className="space-y-1">
@@ -513,39 +295,39 @@ export default function Portfolio() {
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">Full-Stack & Data</h3>
+                  <h3 className="text-2xl font-black mb-6 text-primary">Full-Stack & Data</h3>
                   <div className="grid grid-cols-4 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">React TS</span>
+                      <span className="text-[10px] text-muted-foreground text-center">React TS</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Laravel</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Laravel</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Python 3</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Python 3</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">MongoDB</span>
+                      <span className="text-[10px] text-muted-foreground text-center">MongoDB</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Redis</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Redis</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="RDS" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">RDS</span>
+                      <span className="text-[10px] text-muted-foreground text-center">RDS</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg" alt="NoSQL" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">NoSQL</span>
+                      <span className="text-[10px] text-muted-foreground text-center">NoSQL</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg" alt="Cypress" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">E2E Testing</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Cypress</span>
                     </div>
                   </div>
                   <ul className="space-y-1">
@@ -565,27 +347,27 @@ export default function Portfolio() {
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">Product Leadership</h3>
+                  <h3 className="text-2xl font-black mb-6 text-primary">Product Leadership</h3>
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Trello</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Trello</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Figma</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Figma</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Slack</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Slack</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">GitHub</span>
+                      <span className="text-[10px] text-muted-foreground text-center">GitHub</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Notion</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Notion</span>
                     </div>
                   </div>
                   <ul className="space-y-1">
@@ -613,59 +395,35 @@ export default function Portfolio() {
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">Conceptualization & Ideation</h3>
-                  <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="UX Design" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">UX Design</span>
-                    </div>
-                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="Documentation" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Reporting</span>
-                    </div>
-                  </div>
-                  <ul className="space-y-1">
-                    <li className="flex items-center text-muted-foreground text-sm font-medium">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Ideation
-                    </li>
-                    <li className="flex items-center text-muted-foreground text-sm font-medium">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Concept development
-                    </li>
-                  </ul>
-                </Card>
-
-                <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">AI & Emerging Tech</h3>
+                  <h3 className="text-2xl font-black mb-6 text-primary">AI & Emerging Tech</h3>
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="AI/ML" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">AI/ML</span>
+                      <span className="text-[10px] text-muted-foreground text-center">AI/ML</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="GPT" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">GPT</span>
+                      <span className="text-[10px] text-muted-foreground text-center">GPT</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <svg className="w-8 h-8 mb-2" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h8.79c.45 0 .67-.54.35-.85L6.06 2.85a.5.5 0 0 0-.85.35z" />
                       </svg>
-                      <span className="text-xs text-muted-foreground">Cursor</span>
+                      <span className="text-[10px] text-muted-foreground text-center">Cursor</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <svg className="w-8 h-8 mb-2" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M19.245 5.364c1.322 1.36 1.877 3.216 2.11 5.817.622 0 1.2.135 1.592.654l.73.964c.21.278.323.61.323.955v2.62c0 .339-.173.669-.453.868C20.239 19.602 16.157 21.5 12 21.5c-4.6 0-9.205-2.583-11.547-4.258-.28-.2-.452-.53-.453-.868v-2.62c0-.345.113-.679.321-.956l.73-.963c.392-.517.974-.654 1.593-.654l.029-.297c.25-2.446.81-4.213 2.082-5.52 2.461-2.54 5.71-2.851 7.146-2.864h.198c1.436.013 4.685.323 7.146 2.864zm-7.244 4.328c-.284 0-.613.016-.962.05-.123.447-.305.85-.57 1.108-1.05 1.023-2.316 1.18-2.994 1.18-.638 0-1.306-.13-1.851-.464-.516.165-1.012.403-1.044.996a65.882 65.882 0 00-.063 2.884l-.002.48c-.002.563-.005 1.126-.013 1.69.002.326.204.63.51.765 2.482 1.102 4.83 1.657 6.99 1.657 2.156 0 4.504-.555 6.985-1.657a.854.854 0 00.51-.766c.03-1.682.006-3.372-.076-5.053-.031-.596-.528-.83-1.046-.996-.546.333-1.212.464-1.85.464-.677 0-1.942-.157-2.993-1.18-.266-.258-.447-.661-.57-1.108-.32-.032-.64-.049-.96-.05zm-2.525 4.013c.539 0 .976.426.976.95v1.753c0 .525-.437.95-.976.95a.964.964 0 01-.976-.95v-1.752c0-.525.437-.951.976-.951zm5 0c.539 0 .976.426.976.95v1.753c0 .525-.437.95-.976.95a.964.964 0 01-.976-.95v-1.752c0-.525.437-.951.976-.951zM7.635 5.087c-1.05.102-1.935.438-2.385.906-.975 1.037-.765 3.668-.21 4.224.405.394 1.17.657 1.995.657h.09c.649-.013 1.785-.176 2.73-1.11.435-.41.705-1.433.675-2.47-.03-.834-.27-1.52-.63-1.813-.39-.336-1.275-.482-2.265-.394zm6.465.394c-.36.292-.6.98-.63 1.813-.03 1.037.24 2.06.675 2.47.968.957 2.136 1.104 2.776 1.11h.044c.825 0 1.59-.263 1.995-.657.555-.556.765-3.187-.21-4.224-.45-.468-1.335-.804-2.385-.906-.99-.088-1.875.058-2.265.394zM12 7.615c-.24 0-.525.015-.84.044.03.16.045.336.06.526l-.001.159a2.94 2.94 0 01-.014.25c.225-.022.425-.027.612-.028h.366c.187 0 .387.006.612.028-.015-.146-.015-.277-.015-.409.015-.19.03-.365.06-.526a9.29 9.29 0 00-.84-.044z" />
                       </svg>
-                      <span className="text-xs text-muted-foreground">GitHub Copilot</span>
+                      <span className="text-[10px] text-muted-foreground text-center">GitHub Copilot</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openapi/openapi-original.svg" alt="API" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">APIs</span>
+                      <span className="text-[10px] text-muted-foreground text-center">APIs</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="RAG" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">RAG</span>
+                      <span className="text-[10px] text-muted-foreground text-center">RAG</span>
                     </div>
                   </div>
                   <ul className="space-y-1">
@@ -694,11 +452,11 @@ export default function Portfolio() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
-              <h2 className="text-4xl font-bold mb-6 sticky top-32">Get In Touch</h2>
+              <h2 className="text-4xl font-black mb-6 sticky top-32">Get In Touch</h2>
             </div>
             <div className="lg:col-span-8">
               <Card className="p-12 hover:shadow-xl transition-shadow duration-300">
-                <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
+                <p className="text-xl text-muted-foreground mb-12 leading-relaxed font-medium">
                   If you would like to discuss a project or just say hi, I'm always down to chat.
                 </p>
 

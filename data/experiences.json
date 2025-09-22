@@ -1,0 +1,148 @@
+[
+  {
+    "id": "current-project",
+    "dateRange": "2023 — Present",
+    "badge": "Current",
+    "title": "Private Entrepreneurial Project",
+    "company": "Revolutionizing Family Well-being & Mental Health",
+    "description": "Building the future of family support through cutting-edge technology. Creating transformative digital solutions that empower families during their most challenging moments and revolutionize how we approach parental mental health. Where innovation meets compassion—designing tools that truly matter.",
+    "achievements": [],
+    "whyLoved": "Building the future of family support through cutting-edge technology. Creating transformative digital solutions that empower families during their most challenging moments and revolutionize how we approach parental mental health. Where innovation meets compassion—designing tools that truly matter.",
+    "reference": null,
+    "techStack": ["Laravel", "TypeScript", "React", "CDK", "Sevalla"],
+    "hasExternalLink": false
+  },
+  {
+    "id": "faunaphotonics",
+    "dateRange": "2023 — 2025",
+    "badge": null,
+    "title": "Lead Full Stack Engineer",
+    "company": "FaunaPhotonics • IoT, AI & Data Visualization",
+    "description": "",
+    "achievements": [
+      "Led end-to-end development across AI, data visualization, product lifecycle, and DevOps, delivering tested, scalable platform with strong focus on lifecycle ownership and performance",
+      "Managed integration of AI and data visualization to create actionable insights, optimizing system performance and user experience",
+      "Architected and implemented infrastructure solutions using AWS CDK, ensuring scalable and maintainable cloud deployments",
+      "Collaborated closely with cross-functional teams to deliver innovative IoT solutions that transformed data into meaningful business insights"
+    ],
+    "whyLoved": "The opportunity to work at the intersection of cutting-edge IoT technology and AI was incredibly exciting. Being part of a team that was genuinely pushing boundaries in photonics and data visualization gave me a sense of contributing to something truly innovative and impactful.",
+    "reference": {
+      "name": "Richard Blundell",
+      "title": "CEO",
+      "obfuscatedEmail": "rXXX@XXXXXXXXXXXX.com",
+      "realEmail": "ribl@faunaphotonics.com"
+    },
+    "techStack": ["Laravel", "React", "TypeScript", "CDK", "EC2", "Gitlab"],
+    "hasExternalLink": true
+  },
+  {
+    "id": "low-fi-concerts",
+    "dateRange": "2022 — 2023",
+    "badge": null,
+    "title": "Project Based Contracts",
+    "company": "Low Fi Concerts • Laravel Nova",
+    "description": "",
+    "achievements": [
+      "Delivered end-to-end solutions for small companies, including full-stack development, infrastructure setup, and data architecture",
+      "Optimized systems and workflows to improve performance, scalability, and maintainability",
+      "Provided technical consulting and implementation for diverse client needs across different industries"
+    ],
+    "whyLoved": "The variety of projects and direct client interaction was incredibly rewarding. Each project brought new challenges and the satisfaction of seeing small businesses thrive through better technology solutions.",
+    "reference": {
+      "name": "Anne Dvinge",
+      "title": null,
+      "obfuscatedEmail": "aXXX@XXX.XX.XX",
+      "realEmail": "andv@adm.ku.dk"
+    },
+    "techStack": [],
+    "hasExternalLink": false
+  },
+  {
+    "id": "userneeds",
+    "dateRange": "2018 — 2022",
+    "badge": null,
+    "title": "Senior Full Stack Engineer",
+    "company": "UserNeeds A/S • Laravel, React, AWS",
+    "description": "",
+    "achievements": [
+      "Delivered platform architecture, infrastructure, and observability to support scalable and reliable systems",
+      "Led development of multiple full-stack applications using NodeJS, React, PHP Laravel, Python, and automation/testing tools",
+      "Implemented comprehensive monitoring and logging solutions to ensure system reliability and performance",
+      "Mentored junior developers and contributed to team knowledge sharing and best practices"
+    ],
+    "whyLoved": "The opportunity to work on complex, enterprise-level systems while mentoring and growing with a talented team was incredibly fulfilling. The focus on quality and long-term maintainability aligned perfectly with my engineering values.",
+    "reference": {
+      "name": "Ulrik Hjarnaa",
+      "title": "CTO",
+      "obfuscatedEmail": "uXXXX@XXXXXXX.XX",
+      "realEmail": "ulrik@hjarnaa.eu"
+    },
+    "techStack": [],
+    "hasExternalLink": false
+  },
+  {
+    "id": "danish-broadcasting",
+    "dateRange": "2017 — 2018",
+    "badge": null,
+    "title": "Full Stack Engineer",
+    "company": "Danish Broadcasting (DR) • Symfony, React, Storybook",
+    "description": "",
+    "achievements": [
+      "Maintained the core Drupal CMS using Symfony, React, and Storybook for component development",
+      "Deployed CI/CD pipelines with Jenkins to AWS infrastructure, improving deployment reliability and speed",
+      "Ensured content management system stability for Denmark's national broadcaster serving millions of users",
+      "Collaborated with content teams to deliver seamless digital experiences for diverse media content"
+    ],
+    "whyLoved": "Working for Denmark's national broadcaster was a unique experience - the scale and impact of the platform was immense. Contributing to a system that millions of Danes rely on daily gave me a deep sense of purpose and responsibility.",
+    "reference": {
+      "name": "Jacob Soldath",
+      "title": null,
+      "obfuscatedEmail": "jXX@XX.XX",
+      "realEmail": "jso@dr.dk"
+    },
+    "techStack": [],
+    "hasExternalLink": false
+  },
+  {
+    "id": "bolius",
+    "dateRange": "2012 — 2016",
+    "badge": null,
+    "title": "Full Stack Engineer",
+    "company": "Bolius • TYPO3, PHP, JavaScript, Python",
+    "description": "",
+    "achievements": [
+      "Developed using TYPO3, PHP, JavaScript, and Python for comprehensive web application development",
+      "Implemented DevOps practices to streamline deployment and system management processes",
+      "Designed and delivered maps and data visualizations for big data insights, making complex information accessible",
+      "Built scalable solutions that supported Bolius's mission of providing housing and energy advice to Danish homeowners"
+    ],
+    "whyLoved": "Bolius was my first professional role and taught me the fundamentals of web development. The focus on data visualization and making complex information accessible to everyday people was particularly rewarding and shaped my approach to user-centered development.",
+    "reference": {
+      "name": "Bo Hedmann Jensen",
+      "title": null,
+      "obfuscatedEmail": "bXXXXXXXXXXXX@XX",
+      "realEmail": "bohedmannjensen@gmail.com"
+    },
+    "techStack": [],
+    "hasExternalLink": false
+  },
+  {
+    "id": "freelance-web-development",
+    "dateRange": "2008 — 2012",
+    "badge": null,
+    "title": "Freelance Web Developer",
+    "company": "Independent • Websites, Portfolios & E-commerce",
+    "description": "",
+    "achievements": [
+      "Developed custom websites and portfolios for numerous Danish companies and prominent personalities",
+      "Built comprehensive e-commerce solutions with secure payment integration and inventory management",
+      "Created responsive, user-friendly interfaces using the modern web technologies and best practices of the time",
+      "Managed full project lifecycle from client consultation through deployment and ongoing maintenance",
+      "Delivered high-quality digital solutions that enhanced online presence and business growth"
+    ],
+    "whyLoved": "My freelance journey was incredibly formative - working directly with clients taught me the importance of understanding business needs and translating them into effective digital solutions. The variety of projects and direct client relationships built my foundation in web development and entrepreneurship.",
+    "reference": null,
+    "techStack": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WordPress"],
+    "hasExternalLink": false
+  }
+]
