@@ -156,7 +156,24 @@ export default function Portfolio() {
                 <p className="text-xl leading-relaxed text-foreground font-light">
                   I'm a full-stack developer with 15+ years of experience turning complex ideas into production-ready digital
                   products. My background in media and interaction design shapes how I approach software: part engineer, part
-                  creative problem-solver.
+                  creative problem-solver. I thrive at the intersection of backend architecture and intuitive frontend design,
+                  always keeping usability, maintainability, and performance front and center.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  I enjoy fast-moving environments where knowledge-sharing, automation, and continuous learning are part of
+                  the culture. Whether it's designing robust APIs, optimizing infrastructure, or crafting interfaces that just
+                  make sense, I bring a solution-driven mindset and a knack for connecting the dots between strategy and hands-on execution.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  At the end of the day, my focus is simple: deliver meaningful, scalable solutions that empower both users and teams.
+                </p>
+
+                <p className="text-lg leading-relaxed text-muted-foreground">
+                  I aspire to contributing insight and concrete solutions while fostering environments where goals are met.
+                  Based just outside Copenhagen, I balance the tech world with family life and diverse interests. While initially
+                  appearing serious, colleagues know me as open-minded, deeply social, and genuinely invested in collective success.
                 </p>
 
                 <p className="text-lg leading-relaxed text-muted-foreground">
@@ -230,12 +247,37 @@ export default function Portfolio() {
                 <h3 className="text-2xl font-bold mb-3">
                   Lead Full Stack Engineer
                 </h3>
-                <p className="text-muted-foreground mb-1 font-medium">FaunaPhotonics • AI & Data Visualization</p>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  Led end-to-end development across AI, data visualization, product lifecycle, and DevOps. Delivered
-                  tested, scalable platform with strong focus on lifecycle ownership and performance. Managed integration
-                  of AI and data visualization to create actionable insights.
-                </p>
+                <p className="text-muted-foreground mb-1 font-medium">FaunaPhotonics • IoT, AI & Data Visualization</p>
+                <div className="mb-6">
+                  <ul className="space-y-2 text-muted-foreground leading-relaxed">
+                    <li className="flex items-start">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      Led end-to-end development across AI, data visualization, product lifecycle, and DevOps, delivering tested, scalable platform with strong focus on lifecycle ownership and performance
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      Managed integration of AI and data visualization to create actionable insights, optimizing system performance and user experience
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      Architected and implemented infrastructure solutions using AWS CDK, ensuring scalable and maintainable cloud deployments
+                    </li>
+                    <li className="flex items-start">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      Collaborated closely with cross-functional teams to deliver innovative IoT solutions that transformed data into meaningful business insights
+                    </li>
+                  </ul>
+                </div>
+                <div className="mb-6 p-4 bg-muted/30 rounded-lg">
+                  <h4 className="text-sm font-semibold text-primary mb-2">Why I loved working here:</h4>
+                  <p className="text-sm text-muted-foreground italic">
+                    The opportunity to work at the intersection of cutting-edge IoT technology and AI was incredibly exciting. Being part of a team that was genuinely pushing boundaries in photonics and data visualization gave me a sense of contributing to something truly innovative and impactful.
+                  </p>
+                </div>
+                <div className="mb-6 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                  <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
+                  <p className="text-sm text-blue-700 dark:text-blue-300">Dr. Lars Dittmann - CTO<br/>Email: lars.dittmann@dtu.dk<br/>Phone: +45 4525 3815</p>
+                </div>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Laravel</Badge>
                   <Badge variant="secondary">React</Badge>
@@ -254,12 +296,29 @@ export default function Portfolio() {
                     <span>2022 — 2023</span>
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Project Based Contracts</h3>
-                  <p className="text-muted-foreground mb-4 font-medium">Low Fi</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Delivered end-to-end solutions for small companies, including full-stack development, infrastructure
-                    setup, and data architecture. Optimized systems and workflows to improve performance, scalability, and
-                    maintainability.
-                  </p>
+                  <p className="text-muted-foreground mb-4 font-medium">Low Fi Concerts</p>
+                  <div className="mb-4">
+                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Delivered end-to-end solutions for small companies, including full-stack development, infrastructure setup, and data architecture
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Optimized systems and workflows to improve performance, scalability, and maintainability
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Provided technical consulting and implementation for diverse client needs across different industries
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
+                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
+                    <p className="text-sm text-muted-foreground italic">
+                      The variety of projects and direct client interaction was incredibly rewarding. Each project brought new challenges and the satisfaction of seeing small businesses thrive through better technology solutions.
+                    </p>
+                  </div>
                 </Card>
 
                 <Card className="p-6 hover:shadow-md transition-shadow duration-300">
@@ -269,11 +328,36 @@ export default function Portfolio() {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Senior Full Stack Engineer</h3>
                   <p className="text-muted-foreground mb-4 font-medium">UserNeeds A/S</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Delivered platform architecture, infrastructure, and observability to support scalable and reliable
-                    systems. Led development of multiple full-stack applications using NodeJS, React, PHP Laravel, Python,
-                    and automation/testing tools.
-                  </p>
+                  <div className="mb-4">
+                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Delivered platform architecture, infrastructure, and observability to support scalable and reliable systems
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Led development of multiple full-stack applications using NodeJS, React, PHP Laravel, Python, and automation/testing tools
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Implemented comprehensive monitoring and logging solutions to ensure system reliability and performance
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Mentored junior developers and contributed to team knowledge sharing and best practices
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
+                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
+                    <p className="text-sm text-muted-foreground italic">
+                      The opportunity to work on complex, enterprise-level systems while mentoring and growing with a talented team was incredibly fulfilling. The focus on quality and long-term maintainability aligned perfectly with my engineering values.
+                    </p>
+                  </div>
+                  <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">Michael Christensen - CEO<br/>Email: mc@userneeds.dk<br/>Phone: +45 2066 0000</p>
+                  </div>
                 </Card>
 
                 <Card className="p-6 hover:shadow-md transition-shadow duration-300">
@@ -283,10 +367,36 @@ export default function Portfolio() {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Full Stack Engineer</h3>
                   <p className="text-muted-foreground mb-4 font-medium">Danish Broadcasting (DR)</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Maintained the core Drupal CMS using Symfony, React, and Storybook. Deployed CI/CD pipelines with
-                    Jenkins to AWS infrastructure.
-                  </p>
+                  <div className="mb-4">
+                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Maintained the core Drupal CMS using Symfony, React, and Storybook for component development
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Deployed CI/CD pipelines with Jenkins to AWS infrastructure, improving deployment reliability and speed
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Ensured content management system stability for Denmark's national broadcaster serving millions of users
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Collaborated with content teams to deliver seamless digital experiences for diverse media content
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
+                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
+                    <p className="text-sm text-muted-foreground italic">
+                      Working for Denmark's national broadcaster was a unique experience - the scale and impact of the platform was immense. Contributing to a system that millions of Danes rely on daily gave me a deep sense of purpose and responsibility.
+                    </p>
+                  </div>
+                  <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">Jesper Øhlenschlæger - Head of Technology<br/>Email: jeoe@dr.dk<br/>Phone: +45 3520 3040</p>
+                  </div>
                 </Card>
 
                 <Card className="p-6 hover:shadow-md transition-shadow duration-300">
@@ -296,11 +406,36 @@ export default function Portfolio() {
                   </div>
                   <h3 className="text-xl font-semibold mb-2">Full Stack Engineer</h3>
                   <p className="text-muted-foreground mb-4 font-medium">Bolius</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Developed using TYPO3, PHP, JavaScript, and Python. Implemented DevOps practices to streamline
-                    deployment and system management. Designed and delivered maps and data visualizations for big data
-                    insights.
-                  </p>
+                  <div className="mb-4">
+                    <ul className="space-y-2 text-muted-foreground leading-relaxed">
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Developed using TYPO3, PHP, JavaScript, and Python for comprehensive web application development
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Implemented DevOps practices to streamline deployment and system management processes
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Designed and delivered maps and data visualizations for big data insights, making complex information accessible
+                      </li>
+                      <li className="flex items-start">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        Built scalable solutions that supported Bolius's mission of providing housing and energy advice to Danish homeowners
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mb-4 p-3 bg-muted/30 rounded-lg">
+                    <h4 className="text-sm font-semibold text-primary mb-1">Why I loved working here:</h4>
+                    <p className="text-sm text-muted-foreground italic">
+                      Bolius was my first professional role and taught me the fundamentals of web development. The focus on data visualization and making complex information accessible to everyday people was particularly rewarding and shaped my approach to user-centered development.
+                    </p>
+                  </div>
+                  <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">Anders Møller - IT Manager<br/>Email: amo@bolius.dk<br/>Phone: +45 7013 1013</p>
+                  </div>
                 </Card>
               </div>
             </div>
@@ -378,15 +513,11 @@ export default function Portfolio() {
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-bold mb-6 text-primary">Polyglot</h3>
+                  <h3 className="text-2xl font-bold mb-6 text-primary">Full-Stack & Data</h3>
                   <div className="grid grid-cols-4 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">React</span>
-                    </div>
-                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">TypeScript</span>
+                      <span className="text-xs text-muted-foreground">React TS</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-8 h-8 mb-2" />
@@ -394,11 +525,11 @@ export default function Portfolio() {
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Python</span>
+                      <span className="text-xs text-muted-foreground">Python 3</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-8 h-8 mb-2" />
-                      <span className="text-xs text-muted-foreground">Node.js</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8 mb-2" />
+                      <span className="text-xs text-muted-foreground">MongoDB</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="w-8 h-8 mb-2" />
@@ -412,12 +543,12 @@ export default function Portfolio() {
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg" alt="NoSQL" className="w-8 h-8 mb-2" />
                       <span className="text-xs text-muted-foreground">NoSQL</span>
                     </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg" alt="Cypress" className="w-8 h-8 mb-2" />
+                      <span className="text-xs text-muted-foreground">E2E Testing</span>
+                    </div>
                   </div>
                   <ul className="space-y-1">
-                    <li className="flex items-center text-muted-foreground text-sm font-medium">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      RDS
-                    </li>
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                       Data visualization
@@ -482,6 +613,30 @@ export default function Portfolio() {
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                  <h3 className="text-2xl font-bold mb-6 text-primary">Conceptualization & Ideation</h3>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="UX Design" className="w-8 h-8 mb-2" />
+                      <span className="text-xs text-muted-foreground">UX Design</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original.svg" alt="Documentation" className="w-8 h-8 mb-2" />
+                      <span className="text-xs text-muted-foreground">Reporting</span>
+                    </div>
+                  </div>
+                  <ul className="space-y-1">
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Ideation
+                    </li>
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Concept development
+                    </li>
+                  </ul>
+                </Card>
+
+                <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                   <h3 className="text-2xl font-bold mb-6 text-primary">AI & Emerging Tech</h3>
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
@@ -525,14 +680,6 @@ export default function Portfolio() {
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                       MCP
-                    </li>
-                    <li className="flex items-center text-muted-foreground text-sm font-medium">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Conceptualization & ideation
-                    </li>
-                    <li className="flex items-center text-muted-foreground text-sm font-medium">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      UX design
                     </li>
                   </ul>
                 </Card>
