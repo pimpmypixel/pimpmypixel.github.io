@@ -276,7 +276,7 @@ export default function Portfolio() {
                 </div>
                 <div className="mb-6 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
                   <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
-                  <p className="text-sm text-blue-700 dark:text-blue-300">Dr. Lars Dittmann - CTO<br/>Email: lars.dittmann@dtu.dk<br/>Phone: +45 4525 3815</p>
+                  <p className="text-sm text-blue-700 dark:text-blue-300">Richard Blundell - CEO<br/>Email: ribl@faunaphotonics.com</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <Badge variant="secondary">Laravel</Badge>
@@ -319,6 +319,10 @@ export default function Portfolio() {
                       The variety of projects and direct client interaction was incredibly rewarding. Each project brought new challenges and the satisfaction of seeing small businesses thrive through better technology solutions.
                     </p>
                   </div>
+                  <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
+                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">Anne Dvinge<br/>Email: andv@adm.ku.dk</p>
+                  </div>
                 </Card>
 
                 <Card className="p-6 hover:shadow-md transition-shadow duration-300">
@@ -356,7 +360,7 @@ export default function Portfolio() {
                   </div>
                   <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Michael Christensen - CEO<br/>Email: mc@userneeds.dk<br/>Phone: +45 2066 0000</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">Ulrik Hjarnaa - CTO<br/>Email: ulrik@hjarnaa.eu</p>
                   </div>
                 </Card>
 
@@ -395,7 +399,7 @@ export default function Portfolio() {
                   </div>
                   <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Jesper Øhlenschlæger - Head of Technology<br/>Email: jeoe@dr.dk<br/>Phone: +45 3520 3040</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">Jacob Soldath<br/>Email: jso@dr.dk</p>
                   </div>
                 </Card>
 
@@ -434,7 +438,7 @@ export default function Portfolio() {
                   </div>
                   <div className="mb-4 p-3 bg-blue-50 dark:bg-blue-950/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Reference:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Anders Møller - IT Manager<br/>Email: amo@bolius.dk<br/>Phone: +45 7013 1013</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">Bo Hedmann Jensen<br/>Email: bohedmannjensen@gm</p>
                   </div>
                 </Card>
               </div>
