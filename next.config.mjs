@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/pimpmypixel.github.io',
-  assetPrefix: '/pimpmypixel.github.io/',
+  basePath: '',
+  assetPrefix: '',
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
