@@ -7,13 +7,23 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { ObfuscatedContact } from "@/components/obfuscated-contact"
 import { ObfuscatedReference } from "@/components/obfuscated-reference"
 import { ExperienceCard } from "@/components/ExperienceCard"
+import { ParallaxExperienceCard } from "@/components/ParallaxExperienceCard"
 import experiencesData from "@/data/experiences.json"
 import { Github, Linkedin, Facebook, Mail, Phone, ExternalLink, MapPin, Calendar } from "lucide-react"
 import Particles from "@tsparticles/react"
 import { useEffect, useMemo, useState } from "react"
+import { motion, useScroll, useTransform } from "motion/react"
 
 export default function Portfolio() {
   const [init, setInit] = useState(false)
+  const [randomFunnyImage, setRandomFunnyImage] = useState("")
+
+  const funnyImages = [
+    "8y3tf0cxohqf1.jpg",
+    "funny.webp",
+    "simpleuicomplicatedusers-v0-8nla21d1wbqf1.webp",
+    "wellwellwell-v0-ns657gyltxpf1.webp"
+  ]
 
   const particlesOptions = useMemo(() => ({
     background: {
@@ -62,19 +72,17 @@ export default function Portfolio() {
     detectRetina: true,
   }), [])
 
-  useEffect(() => {
-    setInit(true)
-  }, [])
+  const changeFunnyImage = () => {
+    let newImage
+    do {
+      const randomIndex = Math.floor(Math.random() * funnyImages.length)
+      newImage = funnyImages[randomIndex]
+    } while (newImage === randomFunnyImage && funnyImages.length > 1)
+    setRandomFunnyImage(newImage)
+  }
 
   return (
     <div className="min-h-screen bg-background text-foreground relative">
-      {init && (
-        <Particles
-          id="tsparticles"
-          options={particlesOptions}
-          className="absolute inset-0 -z-10"
-        />
-      )}
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -162,44 +170,44 @@ export default function Portfolio() {
             </div>
             <div className="lg:col-span-8 space-y-8">
               <div className="prose prose-lg max-w-none">
-                <p className="text-xl leading-relaxed text-foreground font-semibold drop-shadow-sm">
+                <p className="text-xl leading-relaxed text-foreground font-medium">
                   I'm a full-stack developer with 15+ years of experience turning complex ideas into production-ready digital
                   products. My background in media and interaction design shapes how I approach software: part engineer, part
                   creative problem-solver. I thrive at the intersection of backend architecture and intuitive frontend design,
                   always keeping usability, maintainability, and performance front and center.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
+                <p className="mt-4 text-normal leading-relaxed text-muted-foreground">
                   I enjoy fast-moving environments where knowledge-sharing, automation, and continuous learning are part of
                   the culture. Whether it's designing robust APIs, optimizing infrastructure, or crafting interfaces that just
                   make sense, I bring a solution-driven mindset and a knack for connecting the dots between strategy and hands-on execution.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
+                <p className="text-normal leading-relaxed text-muted-foreground">
                   At the end of the day, my focus is simple: deliver meaningful, scalable solutions that empower both users and teams.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
+                <p className="text-normal leading-relaxed text-muted-foreground">
                   I aspire to contributing insight and concrete solutions while fostering environments where goals are met.
                   Based just outside Copenhagen, I balance the tech world with family life and diverse interests. While initially
                   appearing serious, colleagues know me as open-minded, deeply social, and genuinely invested in collective success.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
-                  Currently, I'm working on a <span className="text-foreground font-bold">private entrepreneurial project</span> focused on{" "}
-                  <span className="text-foreground font-bold">family disputes and parent mental health</span>, building technology-driven solutions
+                <p className="text-normal leading-relaxed text-muted-foreground">
+                  Currently, I'm working on a <span className="text-foreground">private entrepreneurial project</span> focused on{" "}
+                  <span className="text-foreground">family disputes and parent mental health</span>, building technology-driven solutions
                   to support families through difficult times.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
+                <p className="text-normal leading-relaxed text-muted-foreground">
                   In the past, I've had the opportunity to develop software across a variety of settings — from{" "}
-                  <span className="text-foreground font-semibold">broadcasting agencies</span> and{" "}
-                  <span className="text-foreground font-semibold">large corporations</span> to{" "}
-                  <span className="text-foreground font-semibold">start-ups</span> and{" "}
-                  <span className="text-foreground font-semibold">digital product studios</span>.
+                  <span className="text-foreground">broadcasting agencies</span> and{" "}
+                  <span className="text-foreground">large corporations</span> to{" "}
+                  <span className="text-foreground">start-ups</span> and{" "}
+                  <span className="text-foreground">digital product studios</span>.
                 </p>
 
-                <p className="text-lg leading-relaxed text-muted-foreground font-medium">
+                <p className="text-normal leading-relaxed text-muted-foreground font-medium">
                   When I'm not coding, I'm usually exploring new technologies, contributing to open source, or spending time with
                   family just outside Copenhagen. I identify strongly with solving global challenges through technology.
                 </p>
@@ -217,8 +225,8 @@ export default function Portfolio() {
               <h2 className="text-4xl font-black mb-6 sticky top-32">Experience</h2>
             </div>
             <div className="lg:col-span-8 space-y-8">
-              {experiencesData.map((experience) => (
-                <ExperienceCard key={experience.id} experience={experience} />
+              {experiencesData.map((experience, index) => (
+                <ParallaxExperienceCard key={experience.id} experience={experience} index={index} />
               ))}
             </div>
           </div>
@@ -256,8 +264,6 @@ export default function Portfolio() {
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
 
                       <svg className="w-8 h-8 mb-2" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                        <title>Icon-Architecture/64/Arch_AWS-Cloud-Development-Kit_64</title>
-                        <desc>Created with Sketch.</desc>
                         <defs>
                           <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
                             <stop stopColor="#2E27AD" offset="0%"></stop>
@@ -448,7 +454,7 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 px-6 bg-muted/30">
+      <section id="contact" className="py-18 px-6 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-12">
             <div className="lg:col-span-4">
@@ -488,11 +494,25 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* Funny Image */}
+      <section className="py-12 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center">
+            <img
+              src={`/funny/${randomFunnyImage}`}
+              alt="Funny illustration"
+              className=" h-50 rounded-lg border-3 p-2 border-green shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+              onClick={changeFunnyImage}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
-      <footer className="py-12 px-6 border-t border-border">
+      <footer className="py-4 px-6 border-t border-border">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">© 2025 Pimp My Pixel</p>
+            <p className="text-sm text-muted-foreground">©{new Date().getFullYear()} Pimp My Pixel</p>
             <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <Button variant="ghost" size="sm" asChild>
                 <a href="https://github.com/pimpmypixel" target="_blank" rel="noopener noreferrer">
