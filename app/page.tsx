@@ -72,6 +72,12 @@ export default function Portfolio() {
     detectRetina: true,
   }), [])
 
+  // Initialize random funny image on mount
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * funnyImages.length)
+    setRandomFunnyImage(funnyImages[randomIndex])
+  }, [funnyImages])
+
   const changeFunnyImage = () => {
     let newImage
     do {
