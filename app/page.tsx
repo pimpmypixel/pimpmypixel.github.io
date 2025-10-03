@@ -200,9 +200,9 @@ export default function Portfolio() {
                 </p>
 
                 <p className="text-normal leading-relaxed text-muted-foreground">
-                  Currently, I'm working on a <span className="text-foreground">private entrepreneurial project</span> focused on{" "}
-                  <span className="text-foreground">family disputes and parent mental health</span>, building technology-driven solutions
-                  to support families through difficult times.
+                  Currently, while looking for the next role, I'm working on <span className="text-foreground">private entrepreneurial side projects</span> focused on{" "}
+                  <span className="text-foreground">connecting technologies</span>, building technology-driven solutions
+                  to solve real-world problems for fun, challenge and profit.
                 </p>
 
                 <p className="text-normal leading-relaxed text-muted-foreground">
@@ -214,8 +214,8 @@ export default function Portfolio() {
                 </p>
 
                 <p className="text-normal leading-relaxed text-muted-foreground font-medium">
-                  When I'm not coding, I'm usually exploring new technologies, contributing to open source, or spending time with
-                  family just outside Copenhagen. I identify strongly with solving global challenges through technology.
+                  When I'm not coding, I'm usually exploring new roads less traveled on my motorcycle, hitting a punching bag, advocating for open source, process optimisation and transparency, or spending time with
+                  family just outside Copenhagen. Oh, I identify strongly with solving global SDG challenges through technology.
                 </p>
               </div>
             </div>
