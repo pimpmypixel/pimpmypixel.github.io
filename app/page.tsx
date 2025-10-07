@@ -247,29 +247,21 @@ export default function Portfolio() {
               <h2 className="text-4xl font-black mb-6 sticky top-32">Skills</h2>
             </div>
             <div className="lg:col-span-8">
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                   <h3 className="text-2xl font-black mb-6 text-primary">Cloud & DevOps</h3>
-                  <div className="grid grid-cols-3 gap-4 mb-6">
+                  <div className="grid grid-cols-4 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="w-8 h-8 mb-2" />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">AWS</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Docker</span>
-                    </div>
-                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Kubernetes</span>
-                    </div>
-                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">GitLab</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Bash</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
 
-                      <svg className="w-8 h-8 mb-2" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+                      <svg className="w-12 h-12 mb-2" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                         <defs>
                           <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
                             <stop stopColor="#2E27AD" offset="0%"></stop>
@@ -286,8 +278,32 @@ export default function Portfolio() {
                       <span className="text-[10px] text-muted-foreground text-center">CDK</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" className="w-8 h-8 mb-2" />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cloudflareworkers/cloudflareworkers-original.svg" alt="Cloudflare Workers" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">CF Workers</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Docker</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">GitHub Actions</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">GitLab</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/helm/helm-original.svg" alt="Helm" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Helm</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Kubernetes</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/portainer/portainer-original-wordmark.svg" alt="Portainer" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Portainer</span>
                     </div>
                   </div>
                   <ul className="space-y-1">
@@ -297,7 +313,7 @@ export default function Portfolio() {
                     </li>
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Tooling/Dev-X
+                      CI/CD, Dev-X
                     </li>
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
@@ -307,49 +323,81 @@ export default function Portfolio() {
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-black mb-6 text-primary">Full-Stack & Data</h3>
+                  <h3 className="text-2xl font-black mb-6 text-primary">Full-Stack Development</h3>
                   <div className="grid grid-cols-4 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">React TS</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bun/bun-original.svg" alt="Bun" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Bun</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-8 h-8 mb-2" />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" alt="FastAPI" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">FastAPI</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" alt="GraphQL" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">GraphQL</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/inertiajs/inertiajs-original.svg" alt="Inertia.js" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Inertia.js</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Jupyter</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">Laravel</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-8 h-8 mb-2" />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Node.js</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">PHP</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">Python 3</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">MongoDB</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">React Native</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Redis</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">React TS</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="RDS" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">RDS</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" alt="Streamlit" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Streamlit</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg" alt="NoSQL" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">NoSQL</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg" alt="Symfony" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Symfony</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg" alt="Cypress" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Cypress</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Tailwind CSS</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="Vite" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Vite</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/zustand/zustand-original.svg" alt="Zustand" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Zustand</span>
                     </div>
                   </div>
                   <ul className="space-y-1">
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Data visualization
+                      Frameworks
                     </li>
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Big data
+                      Tooling
                     </li>
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
@@ -359,27 +407,92 @@ export default function Portfolio() {
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                  <h3 className="text-2xl font-black mb-6 text-primary">Data</h3>
+                  <div className="grid grid-cols-4 gap-4 mb-6">
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dynamodb/dynamodb-original.svg" alt="NoSQL" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">DynamoDB</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">MongoDB</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">MySQL</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">PostgreSQL</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 96 96" id="Aws-Rds--Streamline-Svg-Logos" className="w-12 h-12 mb-2">
+                        <path fill="url(#a)" d="M95 1H1v94h94V1Z"></path>
+                        <path fill="#ffffff" d="m19.1111 17.4501 10.9192 10.9193-1.6614 1.6614-10.9193-10.9193v8.9136h-2.35v-11.75c0-.6486.5252-1.175 1.175-1.175h11.75v2.35h-8.9135Zm61.7885-1.175v11.75h-2.35v-8.9136L67.6303 30.0308l-1.6614-1.6614 10.9193-10.9193h-8.9136v-2.35h11.75c.6498 0 1.175.5264 1.175 1.175Zm-2.35 51.7h2.35v11.75c0 .6486-.5252 1.175-1.175 1.175h-11.75v-2.35h8.9136L65.9689 67.6308l1.6614-1.6614 10.9193 10.9193v-8.9136Zm-.5875-20.8997c0-3.8999-4.5026-7.7527-12.0437-10.306l.7531-2.2254c8.668 2.934 13.6406 7.5012 13.6406 12.5314 0 5.0313-4.9726 9.5997-13.6417 12.5325l-.7532-2.2266c7.5423-2.5521 12.0449-6.4038 12.0449-10.3059Zm-59.8592 0c0 3.7365 4.2147 7.4871 11.2753 10.0345l-.7978 2.2101c-8.1522-2.941-12.8275-7.4036-12.8275-12.2446 0-4.8399 4.6753-9.3025 12.8275-12.2447l.7978 2.2102c-7.0606 2.5486-11.2753 6.2991-11.2753 10.0345Zm11.9274 20.5554L19.1111 78.5501h8.9135v2.35h-11.75c-.6498 0-1.175-.5264-1.175-1.175v-11.75h2.35v8.9136l10.9193-10.9193 1.6614 1.6614Zm17.9693-29.8697c-8.3965 0-12.925-2.169-12.925-3.055 0-.8871 4.5285-3.055 12.925-3.055 8.3954 0 12.925 2.1679 12.925 3.055 0 .886-4.5296 3.055-12.925 3.055Zm.0341 9.1004c-8.0394 0-12.9591-2.196-12.9591-3.391v-5.7117c2.894 1.5968 8.0276 2.3523 12.925 2.3523 4.8974 0 10.031-.7555 12.925-2.3523v5.7117c0 1.1961-4.8939 3.391-12.8909 3.391Zm0 8.9723c-8.0394 0-12.9591-2.1961-12.9591-3.391v-5.7799c2.8564 1.6791 7.9219 2.5486 12.9591 2.5486 5.009 0 10.0451-.8683 12.8909-2.5427v5.774c0 1.1961-4.8939 3.391-12.8909 3.391Zm-.0341 8.05c-8.3625 0-12.925-2.2478-12.925-3.4028v-4.8458c2.8564 1.6791 7.9219 2.5486 12.9591 2.5486 5.009 0 10.0451-.8671 12.8909-2.5427v4.8399c0 1.155-4.5625 3.4028-12.925 3.4028Zm0-34.5827c-7.3567 0-15.275 1.6909-15.275 5.405V60.481c0 3.7764 7.6845 5.7528 15.275 5.7528 7.5905 0 15.275-1.9764 15.275-5.7528V34.7061c0-3.7141-7.9183-5.405-15.275-5.405Z"></path>
+                        <defs>
+                          <linearGradient id="a" x1="1" x2="9401" y1="9401" y2="1" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2e27ad"></stop>
+                            <stop offset="1" stop-color="#527fff"></stop>
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                      <span className="text-[10px] text-muted-foreground text-center">RDS</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Redis</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" alt="Streamlit" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Streamlit</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" alt="Supabase" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Supabase</span>
+                    </div>
+                  </div>
+                  <ul className="space-y-1">
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Database design
+                    </li>
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Data visualization
+                    </li>
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Big data analytics
+                    </li>
+                  </ul>
+                </Card>
+
+                <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
                   <h3 className="text-2xl font-black mb-6 text-primary">Product Leadership</h3>
-                  <div className="grid grid-cols-3 gap-4 mb-6">
+                  <div className="grid grid-cols-4 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Trello</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cypressio/cypressio-original.svg" alt="Cypress" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Cypress</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Figma</span>
-                    </div>
-                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Slack</span>
-                    </div>
-                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-8 h-8 mb-2" />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">GitHub</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">Notion</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg" alt="Jest" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Jest</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sentry/sentry-original.svg" alt="Sentry" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Sentry</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Slack</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Trello</span>
                     </div>
                   </div>
                   <ul className="space-y-1">
@@ -395,46 +508,45 @@ export default function Portfolio() {
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                       Strategy & roadmapping
                     </li>
-                    <li className="flex items-center text-muted-foreground text-sm font-medium">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Agile methodologies
-                    </li>
-                    <li className="flex items-center text-muted-foreground text-sm font-medium">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Mentoring
-                    </li>
                   </ul>
                 </Card>
 
                 <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-black mb-6 text-primary">AI & Emerging Tech</h3>
-                  <div className="grid grid-cols-3 gap-4 mb-6">
+                  <h3 className="text-2xl font-black mb-6 text-primary">AI & Generative</h3>
+                  <div className="grid grid-cols-4 gap-4 mb-6">
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="AI/ML" className="w-8 h-8 mb-2" />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="AI/ML" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">AI/ML</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="GPT" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">GPT</span>
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openapi/openapi-original.svg" alt="API" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">APIs</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <svg className="w-8 h-8 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                      <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 509.64" className="w-12 h-12 mb-2">
+                        <path fill="#D77655" d="M115.612 0h280.775C459.974 0 512 52.026 512 115.612v278.415c0 63.587-52.026 115.612-115.613 115.612H115.612C52.026 509.639 0 457.614 0 394.027V115.612C0 52.026 52.026 0 115.612 0z" />
+                        <path fill="#FCF2EE" fill-rule="nonzero" d="M142.27 316.619l73.655-41.326 1.238-3.589-1.238-1.996-3.589-.001-12.31-.759-42.084-1.138-36.498-1.516-35.361-1.896-8.897-1.895-8.34-10.995.859-5.484 7.482-5.03 10.717.935 23.683 1.617 35.537 2.452 25.782 1.517 38.193 3.968h6.064l.86-2.451-2.073-1.517-1.618-1.517-36.776-24.922-39.81-26.338-20.852-15.166-11.273-7.683-5.687-7.204-2.451-15.721 10.237-11.273 13.75.935 3.513.936 13.928 10.716 29.749 23.027 38.848 28.612 5.687 4.727 2.275-1.617.278-1.138-2.553-4.271-21.13-38.193-22.546-38.848-10.035-16.101-2.654-9.655c-.935-3.968-1.617-7.304-1.617-11.374l11.652-15.823 6.445-2.073 15.545 2.073 6.547 5.687 9.655 22.092 15.646 34.78 24.265 47.291 7.103 14.028 3.791 12.992 1.416 3.968 2.449-.001v-2.275l1.997-26.641 3.69-32.707 3.589-42.084 1.239-11.854 5.863-14.206 11.652-7.683 9.099 4.348 7.482 10.716-1.036 6.926-4.449 28.915-8.72 45.294-5.687 30.331h3.313l3.792-3.791 15.342-20.372 25.782-32.227 11.374-12.789 13.27-14.129 8.517-6.724 16.1-.001 11.854 17.617-5.307 18.199-16.581 21.029-13.75 17.819-19.716 26.54-12.309 21.231 1.138 1.694 2.932-.278 44.536-9.479 24.062-4.347 28.714-4.928 12.992 6.066 1.416 6.167-5.106 12.613-30.71 7.583-36.018 7.204-53.636 12.689-.657.48.758.935 24.164 2.275 10.337.556h25.301l47.114 3.514 12.309 8.139 7.381 9.959-1.238 7.583-18.957 9.655-25.579-6.066-59.702-14.205-20.474-5.106-2.83-.001v1.694l17.061 16.682 31.266 28.233 39.152 36.397 1.997 8.999-5.03 7.102-5.307-.758-34.401-25.883-13.27-11.651-30.053-25.302-1.996-.001v2.654l6.926 10.136 36.574 54.975 1.895 16.859-2.653 5.485-9.479 3.311-10.414-1.895-21.408-30.054-22.092-33.844-17.819-30.331-2.173 1.238-10.515 113.261-4.929 5.788-11.374 4.348-9.478-7.204-5.03-11.652 5.03-23.027 6.066-30.052 4.928-23.886 4.449-29.674 2.654-9.858-.177-.657-2.173.278-22.37 30.71-34.021 45.977-26.919 28.815-6.445 2.553-11.173-5.789 1.037-10.337 6.243-9.2 37.257-47.392 22.47-29.371 14.508-16.961-.101-2.451h-.859l-98.954 64.251-17.618 2.275-7.583-7.103.936-11.652 3.589-3.791 29.749-20.474-.101.102.024.101z" />
+                      </svg>
+                      <span className="text-[10px] text-muted-foreground text-center">Claude code</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <svg className="w-12 h-12 mb-2" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h8.79c.45 0 .67-.54.35-.85L6.06 2.85a.5.5 0 0 0-.85.35z" />
                       </svg>
                       <span className="text-[10px] text-muted-foreground text-center">Cursor</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <svg className="w-8 h-8 mb-2" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="w-12 h-12 mb-2" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M19.245 5.364c1.322 1.36 1.877 3.216 2.11 5.817.622 0 1.2.135 1.592.654l.73.964c.21.278.323.61.323.955v2.62c0 .339-.173.669-.453.868C20.239 19.602 16.157 21.5 12 21.5c-4.6 0-9.205-2.583-11.547-4.258-.28-.2-.452-.53-.453-.868v-2.62c0-.345.113-.679.321-.956l.73-.963c.392-.517.974-.654 1.593-.654l.029-.297c.25-2.446.81-4.213 2.082-5.52 2.461-2.54 5.71-2.851 7.146-2.864h.198c1.436.013 4.685.323 7.146 2.864zm-7.244 4.328c-.284 0-.613.016-.962.05-.123.447-.305.85-.57 1.108-1.05 1.023-2.316 1.18-2.994 1.18-.638 0-1.306-.13-1.851-.464-.516.165-1.012.403-1.044.996a65.882 65.882 0 00-.063 2.884l-.002.48c-.002.563-.005 1.126-.013 1.69.002.326.204.63.51.765 2.482 1.102 4.83 1.657 6.99 1.657 2.156 0 4.504-.555 6.985-1.657a.854.854 0 00.51-.766c.03-1.682.006-3.372-.076-5.053-.031-.596-.528-.83-1.046-.996-.546.333-1.212.464-1.85.464-.677 0-1.942-.157-2.993-1.18-.266-.258-.447-.661-.57-1.108-.32-.032-.64-.049-.96-.05zm-2.525 4.013c.539 0 .976.426.976.95v1.753c0 .525-.437.95-.976.95a.964.964 0 01-.976-.95v-1.752c0-.525.437-.951.976-.951zm5 0c.539 0 .976.426.976.95v1.753c0 .525-.437.95-.976.95a.964.964 0 01-.976-.95v-1.752c0-.525.437-.951.976-.951zM7.635 5.087c-1.05.102-1.935.438-2.385.906-.975 1.037-.765 3.668-.21 4.224.405.394 1.17.657 1.995.657h.09c.649-.013 1.785-.176 2.73-1.11.435-.41.705-1.433.675-2.47-.03-.834-.27-1.52-.63-1.813-.39-.336-1.275-.482-2.265-.394zm6.465.394c-.36.292-.6.98-.63 1.813-.03 1.037.24 2.06.675 2.47.968.957 2.136 1.104 2.776 1.11h.044c.825 0 1.59-.263 1.995-.657.555-.556.765-3.187-.21-4.224-.45-.468-1.335-.804-2.385-.906-.99-.088-1.875.058-2.265.394zM12 7.615c-.24 0-.525.015-.84.044.03.16.045.336.06.526l-.001.159a2.94 2.94 0 01-.014.25c.225-.022.425-.027.612-.028h.366c.187 0 .387.006.612.028-.015-.146-.015-.277-.015-.409.015-.19.03-.365.06-.526a9.29 9.29 0 00-.84-.044z" />
                       </svg>
                       <span className="text-[10px] text-muted-foreground text-center">GitHub Copilot</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openapi/openapi-original.svg" alt="API" className="w-8 h-8 mb-2" />
-                      <span className="text-[10px] text-muted-foreground text-center">APIs</span>
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="GPT" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">GPT</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
-                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="RAG" className="w-8 h-8 mb-2" />
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg" alt="RAG" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">RAG</span>
                     </div>
                   </div>
@@ -450,6 +562,42 @@ export default function Portfolio() {
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                       MCP
+                    </li>
+                  </ul>
+                </Card>
+
+                <Card className="p-8 hover:shadow-lg transition-all duration-300 hover:scale-[1.02]">
+                  <h3 className="text-2xl font-black mb-6 text-primary">Interests & Experiments</h3>
+                  <div className="grid grid-cols-4 gap-4 mb-6">
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" alt="Web3" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Arduino</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Linux</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ohmyzsh/ohmyzsh-original.svg" alt="Oh My Zsh" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Oh My Zsh</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/raspberrypi/raspberrypi-original.svg" alt="Raspberry Pi" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">Raspberry Pi</span>
+                    </div>
+                  </div>
+                  <ul className="space-y-1">
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Fun & play
+                    </li>
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Research & development
+                    </li>
+                    <li className="flex items-center text-muted-foreground text-sm font-medium">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
+                      Innovation projects
                     </li>
                   </ul>
                 </Card>
