@@ -443,6 +443,10 @@ export default function Portfolio() {
                       <span className="text-[10px] text-muted-foreground text-center">Redis</span>
                     </div>
                     <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
+                      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" className="w-12 h-12 mb-2" />
+                      <span className="text-[10px] text-muted-foreground text-center">SQLite</span>
+                    </div>
+                    <div className="flex flex-col items-center p-3 rounded-lg bg-muted/50 hover:bg-muted transition-colors">
                       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" alt="Streamlit" className="w-12 h-12 mb-2" />
                       <span className="text-[10px] text-muted-foreground text-center">Streamlit</span>
                     </div>
@@ -506,7 +510,7 @@ export default function Portfolio() {
                     </li>
                     <li className="flex items-center text-muted-foreground text-sm font-medium">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></div>
-                      Strategy & roadmapping
+                      QA and monitoring
                     </li>
                   </ul>
                 </Card>
